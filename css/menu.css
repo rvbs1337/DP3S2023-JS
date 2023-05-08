@@ -1,0 +1,60 @@
+.retangle {
+    position: absolute;
+    width: 4%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: #DDFFD8;
+}
+
+.line1 {
+    margin-left: 4%;
+}
+
+.titulocoluna {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 5000;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+table th{
+    text-align: center;
+    border: 1px solid black;
+    width: 300px;
+}
+
+table td{
+    text-align: center;
+    width: 300px;
+    height: 40px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* cor cinza */
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #ffffff; /* cor branca */
+  }
+
+.homebutton{
+    margin-top: 7px;
+    margin-left: 7px;
+    width: 60px;
+    height: 60px;
+}
+
+.registerbutton{
+    margin-top: 17px;
+    margin-left: 7px;
+    width: 60px;
+    height: 60px;
+}

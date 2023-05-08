@@ -9,7 +9,6 @@ frm.addEventListener("submit", (e) => {
     const senha = frm.inSenha.value
 
     if (usuario == "admin" && senha == "admin") {
-        alert("Bem vindo, Administrador!")
         location.href="../pages/menu.html"
     } else {
         avisoErro.innerText = "Usuario e/ou senha incorreta"
