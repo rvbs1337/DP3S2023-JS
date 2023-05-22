@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Frotainga</title>
+</head>
+
+<body background="../img/fundo.png" style="background-repeat: repeat; background-size: 40%;">
+
+    <div class="centerall">
+
+        <div class="box">
+            <div class="login"></div>
+            <div class="circulo_claro"></div>
+            <div class="circulo_escuro"></div>
+
+            <form>
+                <h1 class="titulo">Registro de Uso</h1>
+                <label for="inFrota" class="frota-form">Qual é a frota do veículo?*</label>
+                <input type="text" id="inFrota" placeholder="123456789" required autofocus class="center_frota">
+
+                <label for="inId" class="id-form">Qual é o id do funcionário?*</label>
+                <input type="text" id="inId" placeholder="ABC1234DEF12" required class="center_id">
+
+                <label for="inDia" class="dia-form">É estimado que a viagem acabe que dia?*</label>
+                <input type="text" id="inDia" placeholder="01/01" required class="center_dia">
+
+                <label for="inHora" class="hora-form">É estimado que a viagem acabe que horas?*</label>
+                <input type="text" id="inHora" placeholder="12:00" required class="center_hora">
+
+                <p class="aviso" id="avisoErro"></p>
+                <button type="submit" class="register_button" disabled>Registrar</button>
+            </form>
+        </div>
+
+        <div class="sidebar">
+            <div class="logo-details"> 
+                <i class='bx bxs-business'></i>
+                <span class="logo_name">Frotaingá</span>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-home-alt-2'></i>
+                        <span class="link_name">Tela inicial</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bxs-edit'></i>
+                            <span class="link_name">Registro</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-list-plus'></i>
+                        <span class="link_name">Cadastro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-list-ul'></i>
+                        <span class="link_name">Lista</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="../js/dp.js"></script>
+</body>
+
+</html>
