@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Frotainga</title>
+</head>
+
+<body background="../img/fundo.png" style="background-repeat: repeat; background-size: 40%;">
+
+    <div class="centerall">
+
+        <div class="box">
+            <div class="login"></div>
+            <div class="circulo_claro"></div>
+            <div class="circulo_escuro"></div>
+
+            <form>
+                <h1 class="titulo">Cadastro de Veículos</h1>
+                <label for="inMarca" class="marca-form">Qual é a marca do veículo?*</label>
+                <select id="inMarca" required autofocus class="center_marca" onchange="atualizarModelos()" >
+                    <option value="nada">-------------------------------Selecione uma Marca---------------------------------</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                </select>
+
+                <label for="inModelo" class="modelo-form">Qual é o modelo do veículo?*</label>
+                <select id="inModelo" required class="center_modelo">
+                    <option>-------------------------------Selecione um Modelo---------------------------------</option>
+                </select>
+
+                <label for="inSetor" class="setor-form">Qual é o setor do veículo?*</label>
+                <select id="inSetor" onchange="atualizarCampo1(this.value)" required autofocus class="center_setor">
+                    <option>--------------------------------Selecione um Setor----------------------------------
+                    </option>
+                    <option value="AMITECH">AMITECH</option>
+                    <option value="FUNREBOM">FUNREBOM</option>
+                    <option value="SEMOB">SEMOB</option>
+                    <option value="SEINFRA">SEINFRA</option>
+                    <option value="SELURB">SELURB</option>
+                    <option value="SECRETARIADESAUDE">SECRETARIA DE SAUDE</option>
+                    <option value="SEMUSPFLORIANO">SEMUSP FLORIANO</option>
+                    <option value="SEMUSPIGUATEMI">SEMUSPIGUATEMI</option>
+                    <option value="SETRAB">SETRAB</option>
+                </select>
+
+                <label for="inHora" class="hora-form">Qual é o chassi do veículo?*</label>
+                <input type="text" id="inHora" placeholder="9BRBLWHEXG0107721" required class="center_hora">
+
+                <label for="inHora" class="renavam-form">Qual é o Revanam do veículo?*</label>
+                <input type="text" id="inHora" placeholder="0000000000-0" required class="center_renavam">
+
+                <label for="inHora" class="ano-form">Qual é o ano do veículo?*</label>
+                <input type="text" id="inHora" placeholder="2010" required class="center_ano">
+
+                <label for="inHora" class="placa-form">Qual é a placa do veículo?*</label>
+                <input type="text" id="inHora" placeholder="ABC1234/ABC1A23" required class="center_placa" oninput="placa()">
+
+                <p class="aviso" id="avisoErro"></p>
+                <button type="submit" class="register_button" disabled>Cadastrar</button>
+            </form>
+        </div>
+        
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class='bx bxs-business'></i>
+                <span class="logo_name">Frotaingá</span>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-home-alt-2'></i>
+                        <span class="link_name">Tela inicial</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bxs-edit'></i>
+                            <span class="link_name">Registro</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-list-plus'></i>
+                        <span class="link_name">Cadastro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-list-ul'></i>
+                        <span class="link_name">Lista</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="../js/cadastro.js"></script>
+</body>
+
+</html>
