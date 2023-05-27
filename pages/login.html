@@ -12,17 +12,25 @@
 <body background="../img/fundo.png" style="background-repeat: repeat; background-size: 40%;">
 
     <div class="centerall">
-        <h1 class="center">Login</h1>
-
-        <div class="login">
+        
+        <div class="box">
+            <div class="login"></div>
+            <div class="circulo_claro"></div>
+            <div class="circulo_escuro"></div>
+            
             <form>
-                <input type="text" id="inUser" placeholder="Usuário" required autofocus class="centeruser">
+                <input type="text" id="inUser" placeholder="Usuário" required autofocus class="center_user">
                 <br>
-                <input type="password" id="inSenha" placeholder="Senha" required class="centersenha">
+                <input type="password" id="inSenha" placeholder="Senha" required class="center_senha"> 
+                <img src="../img/hide_password.png" alt="hide_password icon" class="icon_hide">                       
                 <p class="aviso" id="avisoErro"></p>
-                <input type="submit" value="Acessar Sistema" id="logIn" class="loginbutton">
+                <button type="submit" class="login_button" disabled>Acessar Sistema</button>                        
             </form>
         </div>
+        <div class="icon">
+        <img src="../img/user.png" alt="user icon">
+        </div>
+
     </div>
 
     <script src="../js/login.js"></script>
