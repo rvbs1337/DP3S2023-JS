@@ -196,8 +196,8 @@
 
 .box {
     position: absolute;
-    width: 1030px;
-    height: 525px;
+    width: calc(85%);
+    height: calc(85%);
     left: 150px;
     top: 50px;
     
@@ -233,8 +233,9 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 260px;
+    width: 230px;
     background: #DDFFD8;
+    margin-right: 5px;
 }
 
 .sidebar .logo-details{
@@ -251,29 +252,33 @@
     min-width: 78px;
     text-align: center;
     line-height: 50px;
+    color: #FFFFFF;
 }
 
 .sidebar .logo-details .logo_name{
     font-size: 22px;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rockwell', sans-serif;
+    color: #ffffff;
 }
 
 .sidebar .nav-links {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .sidebar .nav-links li{
     position: relative;
     list-style: none; 
+    right: 30px;
 }
  
 .sidebar .nav-links li i{
     height: 50px;
-    min-width: 78px;
+    min-width: 50px;
     text-align: center;
     line-height: 50px;
     color: #000000;
+    font-size: 1.3em;
 }
 
 .sidebar .nav-links li a{
@@ -281,8 +286,53 @@
 }
 
 .sidebar .nav-links li a .link_name{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
+    color: #4B4B4B;
+    font-family: 'Segoe UI', sans-serif;
 }
+
+.sidebar-margin {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgb(196, 196, 196);
+}
+
+.home-section{
+    position: relative;
+    background: #E4E9F7;
+    left: 260px;
+    width: calc(100% - 260px );
+    transition: all 0.5s ease;
+}
+
+.sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.home-section .home-content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.home-section .home-content .bx-menu,
+.home-section .home-content .text{
+    color: #11101d;
+    font-size: 35px;
+}
+
+.home-section .home-content .bx-menu{
+    margin: 0 15px;
+}
+
+.home-section .home-content .text{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
