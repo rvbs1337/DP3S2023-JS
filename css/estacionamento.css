@@ -1,0 +1,125 @@
+h1 {
+    font-family: 'Jaldi', sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+
+img {
+    position: absolute;
+    height: 400px;
+    left: 300px;
+    top: 130px;
+}
+
+.box_livre {
+    position: absolute;
+    width: 290px;
+    height: 65px;
+    left: 365px;
+    top: 539px;
+
+    background: #C7F5B7;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.box_livre h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
+    line-height: 1.2;
+    color: #535353;
+    margin-top: -2px;
+    margin-left: -235px;
+}
+
+.box_ocupado {
+    position: absolute;
+    width: 290px;
+    height: 65px;
+    left: 680px;
+    top: 539px;
+
+    background: #E49292;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.box_ocupado h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px; 
+    line-height: 1.2;
+    color: #535353;
+    margin-top: -2px;
+    margin-left: -260px;
+}
+
+.setorA {
+    position: absolute;
+    width: 70px;
+    height: 25.5px;
+    left: 302px;
+    top: 105px;
+
+    background: #00e043;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+}
+
+.setorA h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px; 
+    line-height: 1.2;
+    color: #000000;
+    margin-top: -15px;
+    margin-left: -290px;
+}
+
+.setorB {
+    position: absolute;
+    width: 70px;
+    height: 25.5px;
+    left: 374px;
+    top: 105px;
+
+    background: #198b3b;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+}
+
+.setorB h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px; 
+    line-height: 1.2;
+    color: #000000;
+    margin-top: -15px;
+    margin-left: -290px;
+}
+
+.setorC {
+    position: absolute;
+    width: 70px;
+    height: 25.5px;
+    left: 446px;
+    top: 105px;
+
+    background: #198b3b;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+}
+
+.setorC h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px; 
+    line-height: 1.2;
+    color: #000000;
+    margin-top: -15px;
+    margin-left: -290px;
+}
+
